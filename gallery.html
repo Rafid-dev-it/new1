@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Love Story | Memories</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="hearts-background"></div>
+    
+    <header class="couple-header">
+        <div class="container">
+            <h1 class="logo">Nyianda & <span>You</span></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">Our Story</a></li>
+                    <li><a href="gallery.html" class="active">Memories</a></li>
+                    <li><a href="love-letter.html">Love Letters</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="memory-gallery">
+        <div class="container">
+            <h2 class="section-title">Our Precious Moments</h2>
+            
+            <div class="gallery-controls">
+                <button class="filter-btn active" data-filter="all">All Memories</button>
+                
+            </div>
+            
+            <div class="gallery-grid">
+                <!-- Memory 1 -->
+                <div class="gallery-item" data-category="dates">
+                    <img src="images/memory1.jpg" alt="Our first date">
+                    <div class="memory-overlay">
+                        <h3>First Date</h3>
+                        <p>June 15, 2022</p>
+                        <div class="heart-react"><i class="far fa-heart"></i></div>
+                    </div>
+                </div>
+                
+                <!-- Memory 2 -->
+                <div class="gallery-item" data-category="travel">
+                    <img src="images/memory2.jpg" alt="Beach vacation">
+                    <div class="memory-overlay">
+                        <h3>Beach Getaway</h3>
+                        <p>August 2022</p>
+                        <div class="heart-react"><i class="far fa-heart"></i></div>
+                    </div>
+                </div>
+                
+                <!-- Add more memories following the same pattern -->
+            </div>
+            
+            
+        </div>
+    </main>
+
+    <!-- Lightbox Modal -->
+    <div class="memory-lightbox">
+        <div class="lightbox-content">
+            <span class="close-lightbox">&times;</span>
+            <img id="lightbox-image" src="" alt="Enlarged memory">
+            <div class="memory-caption">
+                <h3 id="memory-title"></h3>
+                <p id="memory-date"></p>
+            </div>
+            <div class="lightbox-nav">
+                <button id="prev-memory"><i class="fas fa-chevron-left"></i></button>
+                <button id="next-memory"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="couple-footer">
+        <div class="container">
+            <p>Created with <i class="fas fa-heart heartbeat"></i> for Nyianda</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/gallery.js"></script>
+</body>
+</html>
